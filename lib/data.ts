@@ -1,4 +1,3 @@
-import { IProduct } from './db/models/product.model'
 import { Data, IProductInput } from '@/types'
 import { toSlug } from './utils'
 const products: IProductInput[] = [
