@@ -11,6 +11,11 @@ export const FREE_SHIPPING_MIN_PRICE = Number(
 export const APP_COPYRIGHT =
   process.env.NEXT_PUBLIC_APP_COPYRIGHT ||
   `Copyright © 2025 ${APP_NAME}. All rights reserved.`
+export const SERVER_URL =
+  process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3000'
+
+export const SENDER_EMAIL = process.env.SENDER_EMAIL || 'onboarding@resend.dev'
+export const SENDER_NAME = process.env.SENDER_NAME || APP_NAME
 export const AVAILABLE_PAYMENT_METHODS = [
   {
     name: 'PayPal',
