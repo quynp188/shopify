@@ -10,7 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet'
-export default function Menu() {
+export default function Menu({ forAdmin = false }: { forAdmin?: boolean }) {
   return (
     <div className="flex justify-end">
       <nav className="md:flex gap-3 hidden w-full">
@@ -32,7 +32,7 @@ export default function Menu() {
             </SheetHeader>
             <ThemeSwitcher />
             <UserButton />
-            <CartButton />
+            {forAdmin ? null : <CartButton />}
           </SheetContent>
         </Sheet>
       </nav>
